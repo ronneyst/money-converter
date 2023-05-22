@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+    <title>Money Converter</title>
+  </head>
+
+  <body>
+    <div>
+      <img id="img-logo" src="./assets/logo.gif" alt="logo-money" />
+    </div>
+    <main>
+        <label>
+          Convert <b>from:</b>
+          <select class="first-value">
+            <option value="real">R$ - BRL</option>
+            <option value="dollar">US$ - USD</option>
+            <option value="euro">€ - EUR</option>
+            <option value="pound">£ - GBP</option>
+            <option value="bitcoin">₿ - BTC</option>
+          </select>
+        </label>
+
+        <label>
+          <b>To:</b>
+          <select class="value-select">
+            <option value="real">R$ - BRL</option>
+            <option value="dollar">US$ - USD</option>
+            <option value="euro">€ - EUR</option>
+            <option value="pound">£ - GBP</option>
+            <option value="bitcoin">₿ - BTC</option>
+          </select>
+        </label>
+        
+        <label>
+          Value:
+          <input  class="input-currency" type="text" placeholder="0,00" />
+        </label>
+
+        <button class="convert-button">Convert</button>
+        
+      <section>
+        <div class="currency-box">
+          <img id="first-flag" src="./assets/real.png" alt="real-coin" />
+          <p id="currency-name">Real</p>
+          <p class="currency-value">0,00</p>
+        </div>
+
+        <img id="arrow-img" src="./assets/arrow.png" alt="arrow" />
+
+        <div class="currency-box">
+          <img id="second-flag" src="./assets/usa_dolar.png" alt="usa-dollar-coin" />
+          <p id="currency-name-converted">USA Dollar</p>
+          <p class="currency-converted">0,00</p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
